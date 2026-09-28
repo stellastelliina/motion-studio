@@ -1,0 +1,58 @@
+{
+  "name": "motion-studio",
+  "version": "1.0.0",
+  "description": "Motion graphics framework on Remotion: videos written in code, frame by frame",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@react-three/fiber": "^9.8.1",
+    "@remotion/cli": "4.0.529",
+    "@remotion/effects": "4.0.529",
+    "@remotion/fonts": "4.0.529",
+    "@remotion/media": "4.0.529",
+    "@remotion/media-utils": "4.0.529",
+    "@remotion/noise": "4.0.529",
+    "@remotion/three": "4.0.529",
+    "lucide-react": "^1.48.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.529",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.529",
+    "@types/node": "^26.6.2",
+    "@types/react": "19.2.7",
+    "@types/three": "^0.186.0",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "tsx": "^4.23.15",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=11"
+  },
+  "scripts": {
+    "dev": "tsx scripts/audio.ts && remotion studio",
+    "audio": "tsx scripts/audio.ts",
+    "voice": "tsx scripts/voice.ts",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src scripts",
+    "typecheck": "tsc",
+    "check-template": "tsx scripts/check-template.ts",
+    "format": "prettier --write .",
+    "stills": "tsx scripts/stills.ts",
+    "render": "tsx scripts/render.ts",
+    "new-video": "tsx scripts/new-video.ts",
+    "test": "tsx --test \"tests/**/*.test.ts\"",
+    "cuts": "tsx scripts/cuts.ts",
+    "flicker": "tsx scripts/flicker.ts"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

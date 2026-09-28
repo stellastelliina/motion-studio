@@ -1,0 +1,11 @@
+# Heavy binaries of the references (assets/<video>/reference/) go through Git LFS: a clone gets them
+# with `git lfs pull`, and the history stays light. Text (json, pdb, svg) stays in plain git.
+assets/*/reference/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.mov filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.wav filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.flac filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.png filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+assets/*/reference/**/*.pdf filter=lfs diff=lfs merge=lfs -text

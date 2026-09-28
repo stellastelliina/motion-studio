@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+skills-lock.json
+public/
+out/
+.claude/skills/remotion-best-practices/
+# Inputs stay as they were received or measured.
+assets/

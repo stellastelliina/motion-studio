@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+.DS_Store
+.env*
+!.env.example
+
+# Generated output (out/<video>/: renders, clips, contact sheets): rebuilt from the code.
+out/
+
+# Generated soundtracks: `pnpm audio` rebuilds them from src/videos/*/score.ts.
+public/audio/
+
+# Browser automation logs.
+.playwright-mcp/
